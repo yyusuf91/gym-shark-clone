@@ -1,0 +1,149 @@
+.Top-Nav {
+  background-color: rgb(235, 235, 235);
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.Logo .Menu .Icons {
+  width: 100%;
+  height: 100%;
+}
+.Top-Nav-Content {
+  font-size: small;
+  padding: 0.5rem;
+  border-right: 1px solid rgb(210, 210, 210);
+  box-sizing: border-box;
+  text-align: center;
+}
+.Top-Nav-Icon {
+  position: relative;
+  height: 1rem;
+  width: 1rem;
+  top: 3px;
+  right: 2px;
+}
+.Logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 10rem;
+}
+.Main-Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  border-bottom: 0.1rem solid rgb(210, 210, 210);
+  height: 5rem;
+}
+.Menu-Dropdown {
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 20px;
+  margin: 0px 0px;
+  background-color: inherit;
+  text-align: center;
+}
+
+.Menu-Dropdown:hover {
+  border-bottom: 3px solid black;
+  height: 5rem;
+}
+
+.Icons-Content {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.Icons-Img {
+  width: 25px;
+  height: 25px;
+}
+.Scroll-Nav {
+  font-size: small;
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  border-bottom: 0.1rem solid rgb(210, 210, 210);
+}
+
+.Scroll-Btn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+.Scroll-Btn-Img {
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (min-width: 990px) {
+  .Mobile-Main-Nav {
+    display: none;
+  }
+  .Mobile-Btn-Nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .Main-Nav,
+  .Scroll-Nav,
+  .Top-Nav {
+    display: none;
+  }
+  .Mobile-Main-Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0.75rem;
+
+    border-bottom: 0.1rem solid rgb(210, 210, 210);
+    height: 2.5rem;
+  }
+  .Icons-Img {
+    width: 25px;
+    height: 25px;
+  }
+  .Logo-Mobile {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .Icons-Content {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0.5rem 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .Mobile-Btn-Nav {
+    display: flex;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+  }
+  .Mobile-Btn {
+    font-size: large;
+    font-weight: bold;
+
+    outline: none;
+
+    width: 50%;
+    height: 100%;
+    border: 1px solid #e3e3e3;
+  }
+}
